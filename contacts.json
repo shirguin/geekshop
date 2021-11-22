@@ -1,0 +1,20 @@
+[
+  {
+    "city": "Нижний Новгород",
+    "phone": "8 831 246 17 80",
+    "email": "nnov@stenova.ru",
+    "adress": "ул.Чкалова, 15"
+  },
+  {
+    "city": "Самара",
+    "phone": "8 853 465 89 71",
+    "email": "samara@stenova.ru",
+    "adress": "пр.Гагарина, 64"
+  },
+  {
+    "city": "Киров",
+    "phone": "8 814 225 40 88",
+    "email": "kirov@stenova.ru",
+    "adress": "пр.Ленина, 26"
+  }
+]
