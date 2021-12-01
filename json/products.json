@@ -1,0 +1,92 @@
+[
+  {
+    "category": "дом",
+    "name": "комфорт 1",
+    "image": "products_images/product-1.jpg",
+    "short_desc": "комфортный стул",
+    "description": "подойдет для просмотра фильмов",
+    "price": "2989.5",
+    "quantity": "17"
+  },
+  {
+    "category": "дом",
+    "name": "комфорт 2",
+    "image": "products_images/product-2.jpg",
+    "short_desc": "очень комфортный стул",
+    "description": "подойдет для общения с друзьями",
+    "price": "3687.2",
+    "quantity": "21"
+  },
+  {
+    "category": "дом",
+    "name": "люкс",
+    "image": "products_images/product-3.jpg",
+    "short_desc": "использованы специальные материалы",
+    "description": "для тех кто стремится к лучшему",
+    "price": "8157.99",
+    "quantity": "7"
+  },
+  {
+    "category": "офис",
+    "name": "стандарт",
+    "image": "products_images/product-4.jpg",
+    "short_desc": "офисный стул",
+    "description": "подойдет для переговоров",
+    "price": "3645.2",
+    "quantity": "36"
+  },
+  {
+    "category": "офис",
+    "name": "стандарт 1",
+    "image": "products_images/product-11.jpg",
+    "short_desc": "комфортный стул",
+    "description": "подойдет для просмотра фильмов",
+    "price": "6985.4",
+    "quantity": "8"
+  },
+  {
+    "category": "офис",
+    "name": "стандарт 2",
+    "image": "products_images/product-21.jpg",
+    "short_desc": "комфортный стул",
+    "description": "подойдет для просмотра фильмов",
+    "price": "7654.12",
+    "quantity": "19"
+  },
+  {
+    "category": "модерн",
+    "name": "модерн 1",
+    "image": "products_images/product-31.jpg",
+    "short_desc": "комфортный стул",
+    "description": "подойдет для просмотра фильмов",
+    "price": "12548.3",
+    "quantity": "5"
+  },
+  {
+    "category": "модерн",
+    "name": "модерн 2",
+    "image": "products_images/product-41.jpg",
+    "short_desc": "комфортный стул",
+    "description": "подойдет для просмотра фильмов",
+    "price": "4589.6",
+    "quantity": "10"
+  },
+  {
+    "category": "классика",
+    "name": "классика 1",
+    "image": "products_images/product-51.jpg",
+    "short_desc": "комфортный стул",
+    "description": "подойдет для просмотра фильмов",
+    "price": "5500.0",
+    "quantity": "13"
+  },
+  {
+    "category": "классика",
+    "name": "классика 2",
+    "image": "products_images/product-61.jpg",
+    "short_desc": "комфортный стул",
+    "description": "подойдет для просмотра фильмов",
+    "price": "9999.0",
+    "quantity": "4"
+  }
+]
