@@ -7,9 +7,11 @@ from django.core.management import BaseCommand
 from authapp.models import ShopUser
 from mainapp.models import ProductCategory, Product
 
+
 def load_from_json(file_name):
     with open(f'{settings.BASE_DIR}/json/{file_name}.json', 'r', encoding='utf-8') as json_file:
         return json.load(json_file)
+
 
 class Command(BaseCommand):
     def handle(self, *args, **options):
