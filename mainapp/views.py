@@ -40,11 +40,11 @@ def index(request):
 
 
 def products(request, pk=None):
-    links_menu = ProductCategory.objects.all()
+    links_menu = ProductCategory.objects.all().filter(is_active=True)
 
     if pk is not None:
         if pk == 0:
-            products_list = Product.objects.all()
+            products_list = Product.objects.all().filter(is_active=True)
             category_item = {'name': 'Все', 'pk': 0}
         else:
             category_item = get_object_or_404(ProductCategory, pk=pk)
