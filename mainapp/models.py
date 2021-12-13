@@ -13,6 +13,10 @@ class ProductCategory(models.Model):
         verbose_name = 'категория'
         verbose_name_plural = 'категории'
 
+    def delete(self, *args, **kwargs):
+        self.is_active = False
+        self.save()
+
 
 class Product(models.Model):
     category = models.ForeignKey(ProductCategory, on_delete=models.CASCADE)
@@ -30,5 +34,9 @@ class Product(models.Model):
     class Meta:
         verbose_name = 'продукт'
         verbose_name_plural = 'продукты'
+
+    def delete(self, *args, **kwargs):
+        self.is_active = False
+        self.save()
 
 
