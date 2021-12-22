@@ -2,6 +2,7 @@ import json
 import random
 
 from django.conf import settings
+from django.core.paginator import PageNotAnInteger, EmptyPage
 from django.shortcuts import render, get_object_or_404
 
 # Create your views here.
@@ -16,20 +17,20 @@ def get_basket(user):
 
 
 def get_hot_product():
-    products_list = Product.objects.all()
+    products_list = Product.objects.all().filter(is_active=True)
 
     return random.sample(list(products_list), 1)[0]
 
 
 def get_same_products(hot_product):
-    same_products_list = Product.objects.filter(category=hot_product.category).exclude(pk=hot_product.pk)
+    same_products_list = Product.objects.filter(category=hot_product.category).exclude(pk=hot_product.pk).filter(is_active=True)
 
     return same_products_list[:3]
 
 
 def index(request):
 
-    products_list = Product.objects.all()[:4]
+    products_list = Product.objects.all().filter(is_active=True)[:4]
 
     context = {
         'title': 'Мой магазин',
@@ -39,7 +40,7 @@ def index(request):
     return render(request, 'mainapp/index.html', context)
 
 
-def products(request, pk=None):
+def products(request, pk=None, page=1):
     links_menu = ProductCategory.objects.all().filter(is_active=True)
 
     if pk is not None:
@@ -48,11 +49,20 @@ def products(request, pk=None):
             category_item = {'name': 'Все', 'pk': 0}
         else:
             category_item = get_object_or_404(ProductCategory, pk=pk)
-            products_list = Product.objects.filter(category__pk=pk)
+            products_list = Product.objects.filter(category__pk=pk).filter(is_active=True)
+
+        from django.core.paginator import Paginator
+        paginator = Paginator(products_list, 2)
+        try:
+            products_paginator = paginator.page(page)
+        except PageNotAnInteger:
+            products_paginator = paginator.page(1)
+        except EmptyPage:
+            products_paginator = paginator.page(paginator.num_pages)
 
         context = {
             'links_menu': links_menu,
-            'products': products_list,
+            'products': products_paginator,
             'category': category_item,
             'basket': get_basket(request.user)
         }
@@ -79,7 +89,7 @@ def contact(request):
 
 
 def product(request, pk):
-    links_menu = ProductCategory.objects.all()
+    links_menu = ProductCategory.objects.all().filter(is_active=True)
     context = {
         'links_menu': links_menu,
         'product': get_object_or_404(Product, pk=pk),
