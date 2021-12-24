@@ -1,0 +1,14 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Subject: 
+ =?utf-8?b?0J/QvtC00YLQstC10YDQttC00LXQvdC40LUg0YPRh9C10YLQvdC+0Lkg0LfQsNC/?=
+ =?utf-8?b?0LjRgdC4?=
+From: django@geekshop.local
+To: user17@mail.ru
+Date: Fri, 24 Dec 2021 02:43:33 -0000
+Message-ID: <164031381369.5844.9523125290546509978@PC-Lite>
+
+Для подтверждения учетной записи user17 на портале http://localhost:8000 перейдите по ссылке:
+http://localhost:8000/auth/verify/user17@mail.ru/b791f7691c58475251ccd4b0b89a060f5c8cf2fd/
+-------------------------------------------------------------------------------
