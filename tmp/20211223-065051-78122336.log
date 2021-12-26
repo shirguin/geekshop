@@ -1,0 +1,11 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Subject: Account verify
+From: django@geekshop.local
+To: User4@mail.ru
+Date: Thu, 23 Dec 2021 03:50:51 -0000
+Message-ID: <164023145111.5928.7533220129961997087@PC-Lite>
+
+http://localhost:8000/auth/verify/User4@mail.ru/ab965cf2723e4cfbcd3850618e19b1123b95ed3a/
+-------------------------------------------------------------------------------

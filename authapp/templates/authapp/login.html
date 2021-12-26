@@ -3,6 +3,9 @@
 
 
 {% block content %}
+    {% if 'register' in request.META.HTTP_REFERER %}
+        <span>На Вашу почту отправлено письмо с сылкой для подтверждения аккаунта</span>
+    {% endif %}
     <form class="form-horizontal" action="{% url 'authapp:login' %}" method="post">
         {% if next %}
             <input type="hidden" name="next" value="{{ next }}" />
