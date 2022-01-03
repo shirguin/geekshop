@@ -50,6 +50,11 @@ def save_user_profile(backend, user, response, *args, **kwargs):
         user.age = age
 
     if 'photo_max' in api_data:
-        user.avatar = api_data['photo_max']
+        avatar_url = api_data['photo_max']
+        avatar_response = requests.get(avatar_url)
+        avatar_path = f'{settings.MEDIA_ROOT}/users/{user.pk}.jpg'
+        with open(avatar_path, 'wb') as avatar_file:
+            avatar_file.write(avatar_response.content)
+        user.avatar = f'users/{user.pk}.jpg'
 
     user.save()
