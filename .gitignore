@@ -2,3 +2,4 @@
 django_new
 __pycache__/
 .env
+db.sqlite3
