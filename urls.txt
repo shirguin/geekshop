@@ -1,2 +1,1 @@
-http://80.78.241.139/auth/login/ POST username=django&password=geekbrains
 http://80.78.241.139/basket/
