@@ -1,5 +1,6 @@
 .idea
 django_new
+venv
 __pycache__/
 .env
 db.sqlite3

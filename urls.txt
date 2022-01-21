@@ -1,13 +1,2 @@
-http://80.78.241.139/
-http://80.78.241.139/products/
-http://80.78.241.139/products/0/
-http://80.78.241.139/products/1/
-http://80.78.241.139/products/2/
-http://80.78.241.139/products/3/
-http://80.78.241.139/products/4/
-http://80.78.241.139/products/product/9/
-http://80.78.241.139/contact/
-http://80.78.241.139/admin/users/
-http://80.78.241.139/orders/
-http://80.78.241.139/orders/update/1/
+http://80.78.241.139/auth/login/ POST username=django&password=geekbrains
 http://80.78.241.139/basket/
