@@ -46,6 +46,7 @@ def index(request):
     return render(request, 'mainapp/index.html', context)
 
 
+@cache_page(3600)
 def products(request, pk=None, page=1):
     links_menu = get_links_menu()
 
