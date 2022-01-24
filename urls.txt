@@ -1,1 +1,6 @@
-http://80.78.241.139/orders/update/7/
+http://80.78.241.139/products/
+http://80.78.241.139/products/0/
+http://80.78.241.139/products/1/
+http://80.78.241.139/products/2/
+http://80.78.241.139/products/3/
+http://80.78.241.139/products/4/

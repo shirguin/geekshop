@@ -4,7 +4,7 @@ import random
 from django.conf import settings
 from django.core.paginator import PageNotAnInteger, EmptyPage
 from django.shortcuts import render, get_object_or_404
-
+from django.views.decorators.cache import cache_page
 # Create your views here.
 from basketapp.models import Basket
 from mainapp.models import Product, ProductCategory
