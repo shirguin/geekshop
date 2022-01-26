@@ -48,9 +48,9 @@ INSTALLED_APPS = [
     'ordersapp',
     'mainapp',
 
-    'debug_toolbar',
-    'template_profiler_panel',
-    'django_extensions',
+    # 'debug_toolbar',
+    # 'template_profiler_panel',
+    # 'django_extensions',
 ]
 
 MIDDLEWARE = [
