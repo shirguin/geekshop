@@ -31,4 +31,9 @@ class UserAuthTestCase(TestCase):
 
         self.assertFalse(response.context['user'].is_anonymous)
 
-// Остановился на 1:42
+        self.client.get('/auth/logout/')
+        self.assertEqual(response.status_code, 200)
+
+        response = self.client.get('/')
+        self.assertTrue(response.context['user'].is_anonymous)
+
